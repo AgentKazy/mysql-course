@@ -42,10 +42,12 @@ SELECT DATABASE();
 -- SELECT * FROM shirts WHERE color='white';
 -- UPDATE shirts SET color='off white', shirt_size='XS' WHERE color='white';
 
+-- ###########################
+
 -- DELETE FROM shirts WHERE last_worn=200;
 
 -- DELETE FROM shirts WHERE article='tank top';
 
 -- DELETE FROM shirts;
 
--- DROP TABLE shirts_db;
+-- DROP TABLE shirts;

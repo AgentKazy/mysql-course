@@ -45,4 +45,4 @@ SELECT DATABASE();
 
 -- DELETE FROM shirts;
 
--- DROP TABLE shirts_db;
+-- DROP TABLE shirts;
