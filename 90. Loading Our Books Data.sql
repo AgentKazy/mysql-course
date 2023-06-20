@@ -1,7 +1,6 @@
 -- CREATE DATABASE book_shop;
 -- USE book_shop;
 -- SELECT DATABASE();
-
 -- CREATE TABLE books 
 -- 	(
 -- 		book_id INT NOT NULL AUTO_INCREMENT,
@@ -13,7 +12,6 @@
 -- 		pages INT,
 -- 		PRIMARY KEY(book_id)
 -- 	);
-
 -- INSERT INTO books (title, author_fname, author_lname, released_year, stock_quantity, pages)
 -- VALUES
 -- ('The Namesake', 'Jhumpa', 'Lahiri', 2003, 32, 291),
@@ -32,7 +30,6 @@
 -- ('Cannery Row', 'John', 'Steinbeck', 1945, 95, 181),
 -- ('Oblivion: Stories', 'David', 'Foster Wallace', 2004, 172, 329),
 -- ('Consider the Lobster', 'David', 'Foster Wallace', 2005, 92, 343);
-
 -- SELECT * FROM books;
 DESC books;
 
