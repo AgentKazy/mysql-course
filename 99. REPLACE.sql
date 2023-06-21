@@ -1,0 +1,9 @@
+-- REPLACE(str, from_str, to_str);
+-- SELECT
+--   REPLACE('Hello World!', 'Hell', '%$#@');
+-- SELECT
+--   REPLACE('cheese bread coffee milk', ' ', ' and ');
+-- SELECT
+--   REPLACE(title, ' ', '-')
+-- FROM
+--   books;
