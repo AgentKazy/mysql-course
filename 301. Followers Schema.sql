@@ -26,14 +26,22 @@ USE ig_clone;
 --   FOREIGN KEY (photo_id) REFERENCES photos(id)
 -- );
 --
-CREATE TABLE likes(
-  user_id INT NOT NULL,
-  photo_id INT NOT NULL,
+-- CREATE TABLE likes(
+--   user_id INT NOT NULL,
+--   photo_id INT NOT NULL,
+--   created_at TIMESTAMP DEFAULT NOW(),
+--   FOREIGN KEY (user_id) REFERENCES users(id),
+--   FOREIGN KEY (photo_id) REFERENCES photos(id),
+--   PRIMARY KEY (user_id, photo_id) -- Enforces 1 like per user per photo.
+-- );
+--
+CREATE TABLE follows(
+  follower_id INT NOT NULL,
+  followee_id INT NOT NULL,
   created_at TIMESTAMP DEFAULT NOW(),
-  FOREIGN KEY (user_id) REFERENCES users(id),
-  FOREIGN KEY (photo_id) REFERENCES photos(id),
-  PRIMARY KEY (user_id, photo_id) -- Enforces 1 like per user per photo.
+  FOREIGN KEY (follower_id) REFERENCES users(id),
+  FOREIGN KEY (followee_id) REFERENCES users(id),
+  PRIMARY KEY (follower_id, followee_id) -- Enforces one way follow relationship
 );
 
 -- CREATE TABLE tags();
--- CREATE TABLE follows();
